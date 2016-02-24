@@ -1,2 +1,4 @@
-# strahmb.github.io
-Portfolio Site
+
+# Blog
+
+The default [wintersmith](https://github.com/jnordberg/wintersmith) template

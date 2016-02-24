@@ -1,0 +1,13 @@
+
+extends layout
+
+block content
+	block about-me
+		!=contents['about-me.md'].html
+	block projects
+		each project in projects
+			h3= project.title
+			if project.metadata.subtitle
+				h4= project.metadata.subtitle
+			if project.intro.length > 0
+				!= typogr(project.intro).typogrify()
