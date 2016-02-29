@@ -1,3 +1,6 @@
+block vars
+	- var activeLink = ''
+
 doctype html
 html(lang='en')
 	head
@@ -8,28 +11,22 @@ html(lang='en')
 			title
 				block title
 					= locals.name
-			link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,500italic,700,700italic,800,900')
+			link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic|Alegreya+Sans:900')
 			link(rel='stylesheet', href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css')
 			link(rel='stylesheet', href=contents.css['main.css'].url)
 	body
 		div.site-wrapper
-			header.clearfix
-				div.col.md-col-6
-					h1
-						a(href=locals.url) Brendan Strahm
-					p UX Researcher
-				div.col.md-col-6
-					block nav-links
-						p.right-align
-							//- a(href=locals.url + 'asdf.html') asdf
-							span ...links
-			div#content
+			header
+				block header
+					div.border-bottom.border-silver
+						p
+							h1.h4.mt3.inline-block Brendan Strahm
+							= ' | User Researcher'
+			div.content
 				block content
 					h2 I'm empty!
 					// Empty state
-			footer
+			footer.mt4.border-top.border-silver.pt1.pb3
 					block footer
-						section
-							!=contents['footer.md'].html
 						section
 							p &copy; #{ new Date().getFullYear() } #{ locals.owner }

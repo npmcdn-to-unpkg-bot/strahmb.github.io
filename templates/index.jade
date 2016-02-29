@@ -1,13 +1,25 @@
-
 extends layout
 
+block append vars
+	- activeLink = 'Home'
+
+block header
+	div.clearfix
+		div.col.sm-col-6
+			h1.h0.mb1 Brendan<br />Strahm
+		div.col.sm-col-6.pl3.pt2
+			h5.serif
+				a(href='mailto:bstrahm@gmail.com') bstrahm [at] gmail.com<br />
+				a(href='/resume.pdf') Resume (PDF)
+	div.mb3
+		p.mb1!= typogr(contents['about-me.md'].metadata.tagline).typogrify()
+		a(href= locals.url + '/about-me.html') More about me &raquo;
+
 block content
-	block about-me
-		!=contents['about-me.md'].html
-	block projects
-		each project in projects
-			h3= project.title
-			if project.metadata.subtitle
-				h4= project.metadata.subtitle
-			if project.intro.length > 0
-				!= typogr(project.intro).typogrify()
+	a(name='projects')
+	each project in projects
+		div.clearfix.border.border-silver.mxn3.my2.pb2.px3
+			h2.mb0
+				a(href= project.url)= project.title
+			if project.metadata.tagline
+				div.mt1!= typogr(project.metadata.tagline).typogrify()

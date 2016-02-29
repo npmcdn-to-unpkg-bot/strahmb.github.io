@@ -1,0 +1,6 @@
+block nav
+	nav
+		ul.list-reset.p0
+			each val in [['Home', ''], ['About Me', '/about-me.html'], ['Projects', '/#projects']]
+				li.inline-block.mr2
+					a(href= locals.url + val[1], class= activeLink === val[0] ? 'active' : '')= val[0]
