@@ -21,5 +21,7 @@ block content
 		div.clearfix.border.border-silver.mxn3.my2.pb2.px3
 			h2.mb0
 				a(href= project.url)= project.title
+			if project.metadata.subtitle
+				h3.mt0.h6!= typogr(project.metadata.subtitle).typogrify()
 			if project.metadata.tagline
 				div.mt1!= typogr(project.metadata.tagline).typogrify()

@@ -1,24 +1,36 @@
 ---
-title: Co-Designing Minimalist Onboarding for Mobile Applications
+title: Masters Thesis
+subtitle: '"Co-Designing Minimalist Onboarding for Mobile Applications"'
 template: page.jade
 output: project/:name.html
 tagline: Exploring methods for designing mobile in-app onboarding experiences.
 ---
 
-### Overview
+<p class="note">I'm currently in the middle of my masters research, so this section is still in progress.  I've completed the literature review and methodology, but I'm waiting on the paperwork to go through before I can begin data collection.</p>
 
-#### Problem
-Students’ most common complaint about Pattern was that it took too long to enter data about their study habits.
 
-#### Solution
-I created and refined a prototype through multiple iterations of feedback.  The revised design reduced the number of clicks needed to enter data through smart defaults for the entry fields, use of better date and time inputs for web, iOS, and Android, and a streamlined entry flow.
+### Organization
+Purdue University Human-Centered Design and Development Masters Program
 
-### Process
-The entry process included choosing three options from lists and two date/times, which is a lot of data to manually enter 5-30 times in a row, so I started by researching how other apps handled similar situations.  There were a few dead ends: fitness trackers collect much of their information automatically and many other apps follow the best practice of avoiding typing and manual data entry wherever possible.  I ended up drawing some inspiration from calendars.
+### Problem
+My overall research goal is to explore methods for designing mobile in-app onboarding experiences, which teach new users how to use the app.
 
-I got feedback from the visual designer and product manager, and then began creating prototypes in Proto.io.  While my initial prototypes were closer to a traditional mobile calendar interface, the long presses and dragging in this interface were found to be cumbersome in hallway usability tests.  I eventually iterated to a design that focused on each data point in isolation and used smart defaults to possibly avoid the need for any additional interaction.
+### Research Question
+How can designers elicit users’ lived experiences of learning an app?
 
-### Outcomes
-The final prototype was approved by my manager and I implemented it into our Angular-based web app and consulted on its implementation on iOS and Android.
+## Methodology
+I researched existing methods for eliciting design insights and current trends of onboarding experience design. Then I proposed an iterative, 3-step research protocol based around co-design:
+- A short interview helps researchers learn more about the participant’s attitudes and prior experiences related to onboarding.
+- A think-aloud session performing tasks with a prototype of the app creates a lived experience using and learning about the app.
+- A CARD co-design session allows the researcher and participant to improve the experience in the think-aloud by representing and modifying it using cards to represent types of events.
 
-This project took place as an early assignment in a new job when I was still trying to figure out how to be a UX advocate to an environment that didn’t have good practices in place.  In retrospect, I should have done usability tests with students throughout the iteration process either in addition to or instead of the hallway ones.  This project is one that prompted me to learn how to talk about the value of UX practices in terms of business outcomes and not just best practices.
+## Research Highlights
+
+### Framing the problem
+In order to understand the problem better, I had to find some good theories to be a lens for my inquiry.  Since my focus was on understanding more about people's’ experiences learning to use mobile apps, I started off by taking a phenomenological perspective.  Building on that, constructivism states that the meaning of an artifact isn’t a static thing that you can find through looking at the artifact itself--it is created by a person as they use the artifact.  For me, this meant that in order to elicit design insights about onboarding, I had to focus on people’s lived experiences while they first used the app.
+
+### Minimalist instruction
+Much of my inspiration on a more practical level came from John Carroll’s work at IBM in the 70’s and 80’s.  He was trying to help people transition to desktop computers before many interface conventions and interaction design practices were established, and he developed an approach for nonlinear goal-driven instruction manuals that has had effects on interface design including being the ‘minimalism’ in Nielsen’s heuristic of ‘Aesthetics and Minimalist design.’  Carroll stressed what was essentially a constructivist iterative approach to designing instruction, as he believed that it was impossible to create adequate instructions on the first try.  I tried to preserve the spirit of his research in my approach.
+
+### The CARD method, and my variant
+While interviews and think-aloud sessions are common tools for UX professionals, the CARD co-design method is less known.  Designed by Tudor and Mueller at Bell Labs in the 90’s, this participatory task analysis and redesign method uses cards to abstract the steps in task flows so users can work at a comfortable level of abstraction.  My variation uses cards based on Carroll’s work: setting or completing a goal, learning something new, evaluating something, or having a positive or negative reaction to something.  Researcher and participant lay these cards out in a line to represent an experience using the app.  Then they look for patterns where the participant ran into problems and try to remove and reorder the cards to provide a better experience.  This allows for participants to leverage their lived experience using the app to design a smoother onboarding experience without getting bogged down in its implementation.
