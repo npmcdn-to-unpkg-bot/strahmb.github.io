@@ -4,12 +4,12 @@ body {
 	font-size: 18px; /* Base font size */
 	font-kerning: normal;
 	text-rendering: optimizeLegibility;
-	background-color: #FFFFF6;
-	color: #3B393B;
+	background-color: #FFF;
+	color: #1B2B34;
 }
 
 @media only screen
-	and (min-width: 768px) {
+	and (min-width: 1200px) {
 
 	html,
 	body {
@@ -18,9 +18,9 @@ body {
 }
 
 .site-wrapper {
-	max-width: 30em;
+	max-width: 55em;
 	margin: auto;
-	padding: 0 2em;
+	padding: 0 3em;
 }
 
 .serif {
@@ -34,13 +34,12 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Alegreya Sans', sans-serif;
-	/*color: #2B293B;*/
 }
 
 .h0 { font-size: 3.125em; line-height: 1; }
 h1, .h1 { font-size: 2.618em; }
 h2, .h2 { font-size: 1.931em; }
-h3, .h3 { font-size: 1.618em; color: #6B696B; }
+h3, .h3 { font-size: 1.618em; color: #4F5B66; }
 h4, .h4 { font-size: 1.194em; }
 h5, .h5 { font-size: 1em; }
 h6, .h6 { font-size: 1em; }
@@ -55,27 +54,27 @@ h6, .h6 { font-size: 1em; }
 }
 
 p {
-	margin: 0;
+	/*margin: 0;*/
 	line-height: 1.55;
 }
 
-.content p + p {
+/*.content p + p {
 	text-indent: 1em;
-}
+}*/
 
 a {
-	color: #4B5B9B;
+	color: #36C;
 }
 
 a:hover,
 a:active {
-	color: #1B2B6B;
+	color: #69C;
 }
 
 ul {
 	list-style-type: disc;
 	margin: 0;
-	padding: 0;
+	/*padding: 0;*/
 }
 
 li {
@@ -99,18 +98,60 @@ figure {
 	margin-bottom: 1.5em;
 }
 
+@media only screen
+	and (min-width: 52em) {
+
+	.figwrapper {
+		position: absolute;
+		right: 0;
+		width: 33.3333%;
+	}
+
+	.figwrapper>figure {
+		position: relative;
+		margin-top: 0;
+	}
+}
+
 figure img {
-	border: 1px solid #6B696B;
+	border: 1px solid #4F5B66;
 }
 
 figcaption {
 	font-size: 0.833em;
-	color: #6B696B;
+	color: #4F5B66;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #C0C5CE;
+	margin: 2em 0;
+}
+
+.project {
+	background-size: cover;
+}
+
+.project>div {
+	min-height: 15em;
+	background-color: rgba(51, 102, 204, 0.95);
+	border: 1px solid transparent;
+}
+
+.project,
+.project span,
+.project p,
+.project h3 {
+	color: #FFF;
+}
+
+.project a {
+	color: #FFF;
 }
 
 .note {
-	color: #6B696B;
-	border: 1px solid #6B696B;
+	color: #4F5B66;
+	border: 1px solid #C0C5CE;
 	margin-left: -1em;
 	margin-right: -1em;
 	padding: 0.5em 1em;
@@ -121,9 +162,13 @@ figcaption {
 }
 
 .caps {
-	letter-spacing: 0;
+	letter-spacing: 1px;
+}
+
+.silver {
+	color: #C0C5CE;
 }
 
 .border-silver {
-	border-color: #d4d4d4;
+	border-color: #C0C5CE;
 }

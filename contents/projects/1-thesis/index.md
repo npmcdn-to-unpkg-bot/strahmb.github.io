@@ -4,19 +4,13 @@ subtitle: '"Co-Designing Minimalist Onboarding for Mobile Applications"'
 template: page.jade
 output: project/:name.html
 tagline: Exploring methods for designing mobile in-app onboarding experiences.
+note: I'm currently in the middle of my masters research, so this section is still in progress.  I've completed the literature review and methodology, but I'm waiting on the paperwork to go through before I can begin data collection.
+image: degree-pages-wireframe.jpg
+
+Organization: Purdue University Human-Centered Design and Development Masters Program
+Problem: My overall research goal is to explore methods for designing mobile in-app onboarding experiences, which teach new users how to use the app.
+Research-Question: How can designers elicit users’ lived experiences of learning an app?
 ---
-
-<p class="note">I'm currently in the middle of my masters research, so this section is still in progress.  I've completed the literature review and methodology, but I'm waiting on the paperwork to go through before I can begin data collection.</p>
-
-
-### Organization
-Purdue University Human-Centered Design and Development Masters Program
-
-### Problem
-My overall research goal is to explore methods for designing mobile in-app onboarding experiences, which teach new users how to use the app.
-
-### Research Question
-How can designers elicit users’ lived experiences of learning an app?
 
 ## Methodology
 I researched existing methods for eliciting design insights and current trends of onboarding experience design. Then I proposed an iterative, 3-step research protocol based around co-design:

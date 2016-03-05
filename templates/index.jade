@@ -5,23 +5,27 @@ block append vars
 
 block header
 	div.clearfix
-		div.col.sm-col-6
-			h1.h0.mb1 Brendan<br />Strahm
-		div.col.sm-col-6.pl3.pt2
-			h5.serif
-				a(href='mailto:bstrahm@gmail.com') bstrahm [at] gmail.com<br />
-				a(href='/resume.pdf') Resume (PDF)
-	div.mb3
-		p.mb1!= typogr(contents['about-me.md'].metadata.tagline).typogrify()
-		a(href= locals.url + '/about-me.html') More about me &raquo;
+		div.clearfix
+			div.col.sm-col-6
+				h1.h0.mb1 Brendan Strahm
+			div.col.sm-col-6.pl3.pt2
+				h5.serif.mb0
+					a(href='mailto:bstrahm@gmail.com') bstrahm [at] gmail.com<br />
+					a(href='/resume.pdf') Resume (PDF)
+		div.mb3.md-col.md-col-6
+			p.mb1!= typogr(contents['about-me.md'].metadata.tagline).typogrify()
+			a(href= '/about-me.html') More about me &raquo;
 
 block content
 	a(name='projects')
-	each project in projects
-		div.clearfix.border.border-silver.mxn3.my2.pb2.px3
-			h2.mb0
-				a(href= project.url)= project.title
-			if project.metadata.subtitle
-				h3.mt0.h6!= typogr(project.metadata.subtitle).typogrify()
-			if project.metadata.tagline
-				div.mt1!= typogr(project.metadata.tagline).typogrify()
+	div.clearfix
+		each project in projects
+			div.md-col.md-col-6
+				div.clearfix.mr2.mt2.project(style="background-image: url(#{project.url + project.metadata.image})")
+					div.pb2.px3
+						h2.mb0
+							a(href= project.url)= project.title
+						if project.metadata.subtitle
+							h3.mt0.h6.caps!= typogr(project.metadata.subtitle).typogrify()
+						if project.metadata.tagline
+							div.mt1!= typogr(project.metadata.tagline).typogrify()

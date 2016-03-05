@@ -1,15 +1,48 @@
 extends layout
 
 block content
-	h5.mb0.serif
-		a(href=locals.url) &laquo; Home
-
-	h2.h1 #{ page.title }
+	- var note = page.metadata.note;
+	- var organization = page.metadata.Organization;
+	- var problem = page.metadata.Problem;
+	- var solution = page.metadata.Solution;
+	- var researchQuestion = page.metadata['Research-Question'];
 	
-	!= typogr(page.html).typogrify()
+	h5.mb0.serif
+		a(href='/') &laquo; Home
+
+	h2.h0= page.title
+	h3.h5.silver.caps= page.metadata.subtitle
+	
+	if note
+		p.note
+			b NOTE
+			br
+			= note
 	
 	div.clearfix
-		h5.mb0.serif.col.sm-col-4
-			a(href=locals.url) &laquo; Home
-		h5.mb0.serif.col.sm-col-4.center
-			a(href=locals.url + page.url) &uarr; Top
+		if organization
+			div.md-col-right.md-col-4.pr3
+				h3 Organization
+				p= organization
+		if problem
+			div.md-col.md-col-4.pr3
+				h3 Problem
+				p= problem
+		if solution
+			div.md-col.md-col-4.pr3
+				h3 Solution
+				p= solution
+		if researchQuestion
+			div.md-col.md-col-4.pr3
+				h3 Research Question
+				p= researchQuestion
+	
+	div.clearfix.relative
+		div.md-col.md-col-8.pr3
+			!= typogr(page.html).typogrify()
+	
+	div.clearfix
+		h5.mb0.serif.col.md-col-4
+			a(href='/') &laquo; Home
+		h5.mb0.serif.col.md-col-4.center
+			a(href='#') &uarr; Top
