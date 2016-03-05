@@ -6,39 +6,36 @@ block content
 	- var problem = page.metadata.Problem;
 	- var solution = page.metadata.Solution;
 	- var researchQuestion = page.metadata['Research-Question'];
-	
-	h5.mb0.serif
-		a(href='/') &laquo; Home
 
-	h2.h0= page.title
-	h3.h5.silver.caps= page.metadata.subtitle
-	
-	if note
-		p.note
-			b NOTE
-			br
-			= note
-	
-	div.clearfix
-		if organization
-			div.md-col-right.md-col-4.pr3
-				h3 Organization
-				p= organization
-		if problem
-			div.md-col.md-col-4.pr3
-				h3 Problem
-				p= problem
-		if solution
-			div.md-col.md-col-4.pr3
-				h3 Solution
-				p= solution
-		if researchQuestion
-			div.md-col.md-col-4.pr3
-				h3 Research Question
-				p= researchQuestion
+	div.hero
+		h2.h0= page.title
+		h3.h5.silver.caps= page.metadata.subtitle
+		
+		div.clearfix
+			if organization
+				div.md-col-right.md-col-4.pr3
+					h3 Organization
+					p= organization
+			if problem
+				div.md-col.md-col-4.pr3
+					h3 Problem
+					p= problem
+			if solution
+				div.md-col.md-col-4.pr3
+					h3 Solution
+					p= solution
+			if researchQuestion
+				div.md-col.md-col-4.pr3
+					h3 Research Question
+					p= researchQuestion
 	
 	div.clearfix.relative
 		div.md-col.md-col-8.pr3
+			if note
+				p.note
+					b NOTE
+					br/
+					= note
 			!= typogr(page.html).typogrify()
 	
 	div.clearfix
