@@ -6,6 +6,7 @@ block content
 	- var problem = page.metadata.Problem;
 	- var solution = page.metadata.Solution;
 	- var researchQuestion = page.metadata['Research-Question'];
+	- var role = page.metadata.Role;
 
 	div.hero
 		h2.h0= page.title
@@ -13,10 +14,6 @@ block content
 			h3.h5.silver.caps!= typogr(page.metadata.subtitle).typogrify()
 		
 		div.clearfix
-			if organization
-				div.md-col-right.md-col-4.pr3
-					h3 Organization
-					p!= typogr(organization).typogrify()
 			if problem
 				div.md-col.md-col-4.pr3
 					h3 Problem
@@ -29,9 +26,18 @@ block content
 				div.md-col.md-col-4.pr3
 					h3 Research Question
 					p!= typogr(researchQuestion).typogrify()
+			if role
+				div.md-col.md-col-4.pr3
+					h3 My Role
+					p!= typogr(role).typogrify()
 	
 	div.clearfix.relative
 		div.md-col.md-col-8.pr3
+			if organization
+				div.figwrapper
+					figure.flush
+						h4 Organization
+						p!= typogr(organization).typogrify()
 			if note
 				p.note
 					b NOTE

@@ -5,26 +5,39 @@ html {
 html,
 body {
 	font-family: 'Alegreya Sans', serif;
-	font-size: 18px; /* Base font size */
+	font-size: 16px; /* Base font size */
 	font-kerning: normal;
 	text-rendering: optimizeLegibility;
 	background-color: #FFF;
 	color: #1B2B34;
 }
 
-@media only screen
-	and (min-width: 1200px) {
-
-	html,
-	body {
-		font-size: 21px;
-	}
-}
-
 .site-wrapper {
 	max-width: 55em;
 	margin: auto;
-	padding: 0 3em;
+	padding: 0 0 0 1em;
+}
+
+@media only screen
+	and (min-width: 40em) {
+
+	html,
+	body {
+		font-size: 18px;
+	}
+
+	.site-wrapper {
+		padding: 0 2em 0 3em;
+	}
+}
+
+@media only screen
+	and (min-width: 75em) {
+
+	html,
+	body {
+		font-size: 20px;
+	}
 }
 
 .serif {
@@ -43,9 +56,9 @@ h1, h2, h3, h4, h5, h6,
 
 .h0 { font-size: 3.125em; line-height: 1; }
 h1, .h1 { font-size: 2.618em; }
-h2, .h2 { font-size: 1.931em; }
-h3, .h3 { font-size: 1.618em; color: #65737E; }
-h4, .h4 { font-size: 1.194em; }
+h2, .h2 { font-size: 1.9375em; }
+h3, .h3 { font-size: 1.625em; color: #65737E; }
+h4, .h4 { font-size: 1.1875em; }
 h5, .h5 { font-size: 1em; }
 h6, .h6 { font-size: 1em; }
 
@@ -62,14 +75,9 @@ strong, b {
 	color: #343D46;
 }
 
-p {
-	/*margin: 0;*/
+p, li {
 	line-height: 1.55;
 }
-
-/*.content p + p {
-	text-indent: 1em;
-}*/
 
 a {
 	color: #36C;
@@ -106,18 +114,18 @@ p>img {
 .hero {
 	position: relative;
 	background-color: #36C;
-  margin: 0 -600em;
-  padding: 1em 600em;
+	margin: 0 -600em;
+	padding: 1em 600em;
 }
 
 .hero::before {
 	content: "";
-	position: absolute;
-  z-index: -1; /* behind parent */
-  top: 0;
-  bottom: 0;
-  left: 598.5rem;
-  right: 598.5rem;
+	position: absolute	;
+z-index: -1; /* behind parent */
+	top: 0;
+	bottom: 0;
+	left: 598.5rem;
+	right: 598.5rem;
 	background-color: #36C;
 }
 
@@ -139,13 +147,29 @@ p>img {
 }
 
 figure {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin: 1.5em;
 }
 
 figure img {
 	border: 1px solid #C0C5CE;
 }
+
+figure.flush {
+	margin-left: 0;
+}
+
+@media only screen
+	and (min-width: 40em) {
+
+	figure.flush {
+		margin-left: 1.5em;
+	}
+}
+
+/*figure a img {
+	border: 1px solid #36C;
+}*/
+
 
 @media only screen
 	and (min-width: 52em) {
@@ -179,9 +203,17 @@ hr {
 }
 
 .project>div {
-	min-height: 15em;
+	min-height: 12em;
 	background-color: rgba(51, 102, 204, 0.93);
 	border: 1px solid transparent;
+}
+
+@media only screen
+	and (min-width: 52em) {
+
+	.project>div {
+		min-height: 15em;
+	}
 }
 
 .project,
@@ -215,6 +247,10 @@ hr {
 
 .caps {
 	letter-spacing: 1px;
+}
+
+.content .caps {
+	letter-spacing: 0;
 }
 
 .silver {

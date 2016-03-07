@@ -9,10 +9,8 @@ image: register-on-time.png
 Organization: <a href="http://itap.purdue.edu/studio/">Studio by Purdue</a>
 Problem: My team was asked to quickly create a mockup for a web-based dashboard and notification system to help students at Purdue University register for their classes on time.
 Solution: Our visual designer and I performed five semi-structured interviews with undergraduate students about their current scheduling and registration practices.
+Role: I led the research for this project and created the final iteration of the mockup.
 ---
-
-## My Role
-I led the research for this project and created the final iteration of the mockup.
 
 ## Process
 
@@ -25,7 +23,7 @@ I wrote an interview script that focused on:
 - Their advisor meeting and how they prepared.
 
 <div class="figwrapper">
-	<figure style="top: -19em;">
+	<figure style="top: -18em;">
 		<a href="interview.png" data-lightbox="interview" data-title="Semi-structured interview script">
 			![Semi-structured interview script](interview.png)
 		</a>

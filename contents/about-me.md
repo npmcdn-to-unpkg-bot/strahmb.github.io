@@ -2,7 +2,11 @@
 title: About Me
 template: page.jade
 output: about-me.html
-tagline: I'm a Masters student in Human-Centered Design and Development at Purdue University. I love user research and interaction design, and I can code as well. I also swing dance and camp with my wife and dog.
+tagline: I'm a Masters student in Human-Centered Design and Development at Purdue University. I love <b>user research</b> and interaction design, and I can code as well.
 ---
 
-I’m a masters student studying Human-Centered Design and Development at Purdue University. As a programmer, I first became interested in User Experience Design (UX) when I realized that there were quality issues or setbacks in development projects that could have been avoided by better user research. As I have focused on UX in my graduate studies and incorporated some of these processes into my work as a developer, I’ve become a big fan of iterative design processes and helping users get involved in design through co-design methods. I value generative and evaluative qualitative research methods, but I’ve also studied quantitative research methods to provide a complementary perspective. In my post-graduate career I would like to work in an environment where I can learn new things and figure out puzzles. I value being able to collaborate with skilled and passionate people, and believe that the best products are designed by close-knit, skilled, cross-functional teams.
+I’m a Masters student in **Human-Centered Design and Development** at **Purdue University** and currently living in West Lafayette, IN with my wife, Jenna, and our dog, Daisy. When I'm not working on co-design research for my thesis, I'm probably hiking, camping, swing dancing, or hanging out with family and friends.
+
+I believe that user research is an essential part of making great products at scale. I've seen the chaos that can happen when teams make design decisions without good research, and I want to help provide that foundation. I've studied **qualitative research methods**, **design**, and **programming**, so I can communicate effectively with a wide variety of people and wear multiple hats when I need to.
+
+I'm always interested in meeting new people, so shoot me an email at bstrahm [at] gmail.com or hit me up on Twitter at [@strahmb](https://twitter.com/strahmb).

@@ -4,23 +4,25 @@ subtitle: '"Co-Designing Minimalist Onboarding for Mobile Applications"'
 template: page.jade
 output: project/:name.html
 tagline: Exploring methods for designing mobile in-app onboarding experiences.
-note: I'm currently in the middle of my masters research, so this section is still in progress.  I've completed the literature review and methodology, but I'm waiting on the paperwork to go through before I can begin data collection.
 image: degree-pages-wireframe.jpg
 
 Organization: <a href="https://polytechnic.purdue.edu/degrees/ms-computer-graphics-technology#Human-centered%20design%20and%20development">Purdue University Human-Centered Design and Development Masters Program</a>
 Problem: My overall research goal is to explore methods for designing mobile in-app onboarding experiences, which teach new users how to use the app.
 Research-Question: '"How can designers elicit users’ lived experiences of learning an app?"'
+Role: I did a literature review, proposed a new research protocol, and am currently testing it out.
+
+note: I'm currently in the middle of my masters research, so this section is still in progress.  I've completed the literature review and methodology, but I'm waiting on the paperwork to go through before I can begin data collection.
 ---
 
 ## Methodology
 I researched existing methods for eliciting design insights and current trends of onboarding experience design. Then I proposed an iterative, 3-step research protocol based around co-design:
-- A short interview helps researchers learn more about the participant’s attitudes and prior experiences related to onboarding.
-- A think-aloud session performing tasks with a prototype of the app creates a lived experience using and learning about the app.
-- A CARD co-design session allows the researcher and participant to improve the experience in the think-aloud by representing and modifying it using cards to represent types of events.
+- A **short interview** helps researchers learn more about the **participant’s attitudes and prior experiences** related to onboarding.
+- A **think-aloud session** performing tasks with a prototype of the app **creates a lived experience** using and learning about the app.
+- A [CARD co-design session](http://pro.sagepub.com/content/37/4/295.short) allows the researcher and participant to **improve the experience** by representing and modifying it using cards to represent types of events.
 
 ## Research Highlights
 
-### Framing the problem
+### Theoretical Framing
 In order to understand the problem better, I had to find some good theories to be a lens for my inquiry.  Since my focus was on understanding more about people's’ experiences learning to use mobile apps, I started off by taking a phenomenological perspective.  Building on that, constructivism states that the meaning of an artifact isn’t a static thing that you can find through looking at the artifact itself--it is created by a person as they use the artifact.  For me, this meant that in order to elicit design insights about onboarding, I had to focus on people’s lived experiences while they first used the app.
 
 ### Minimalist instruction
