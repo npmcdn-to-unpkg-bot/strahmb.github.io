@@ -11,15 +11,17 @@ html(lang='en')
 			title
 				block title
 					= locals.name
-			link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic|Alegreya+Sans:800')
+			link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400italic,700,700italic,800')
 			link(rel='stylesheet', href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css')
+			link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+			link(rel='stylesheet', href=contents.css['lightbox.min.css'].url)
 			link(rel='stylesheet', href=contents.css['main.css'].url)
 	body
 		div.site-wrapper
 			header
 				block header
 					div.my0
-						h1.h4.mt3.inline-block Brendan Strahm
+						h1.h4.mt1.inline-block Brendan Strahm
 						= ' | User Researcher'
 					h5.mt0.mb1.serif
 						a(href='/') &laquo; Home
@@ -31,3 +33,5 @@ html(lang='en')
 					block footer
 						section
 							p &copy; #{ new Date().getFullYear() } #{ locals.owner }
+		block scripts
+			script(type='text/javascript', src=contents.js['lightbox-plus-jquery.min.js'].url)

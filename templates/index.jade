@@ -6,14 +6,14 @@ block append vars
 block header
 	div.clearfix
 		div.clearfix
-			div.col.sm-col-6
+			div.col.md-col-6
 				h1.h0.mb1 Brendan Strahm
-			div.col.sm-col-6.pl3.pt2
+			div.col.md-col-6.pt2
 				h5.serif.mb0
 					a(href='mailto:bstrahm@gmail.com') bstrahm [at] gmail.com<br />
 					a(href='/resume.pdf') Resume (PDF)
-		div.mb3.md-col.md-col-6
-			p.mb1!= typogr(contents['about-me.md'].metadata.tagline).typogrify()
+		div.mb3.md-col.md-col-6.pr2
+			p.my1!= typogr(contents['about-me.md'].metadata.tagline).typogrify()
 			a(href= '/about-me.html') More about me &raquo;
 
 block content

@@ -7,9 +7,9 @@ tagline: Exploring methods for designing mobile in-app onboarding experiences.
 note: I'm currently in the middle of my masters research, so this section is still in progress.  I've completed the literature review and methodology, but I'm waiting on the paperwork to go through before I can begin data collection.
 image: degree-pages-wireframe.jpg
 
-Organization: Purdue University Human-Centered Design and Development Masters Program
+Organization: <a href="https://polytechnic.purdue.edu/degrees/ms-computer-graphics-technology#Human-centered%20design%20and%20development">Purdue University Human-Centered Design and Development Masters Program</a>
 Problem: My overall research goal is to explore methods for designing mobile in-app onboarding experiences, which teach new users how to use the app.
-Research-Question: How can designers elicit users’ lived experiences of learning an app?
+Research-Question: '"How can designers elicit users’ lived experiences of learning an app?"'
 ---
 
 ## Methodology

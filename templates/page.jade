@@ -9,25 +9,26 @@ block content
 
 	div.hero
 		h2.h0= page.title
-		h3.h5.silver.caps= page.metadata.subtitle
+		if page.metadata.subtitle
+			h3.h5.silver.caps!= typogr(page.metadata.subtitle).typogrify()
 		
 		div.clearfix
 			if organization
 				div.md-col-right.md-col-4.pr3
 					h3 Organization
-					p= organization
+					p!= typogr(organization).typogrify()
 			if problem
 				div.md-col.md-col-4.pr3
 					h3 Problem
-					p= problem
+					p!= typogr(problem).typogrify()
 			if solution
 				div.md-col.md-col-4.pr3
 					h3 Solution
-					p= solution
+					p!= typogr(solution).typogrify()
 			if researchQuestion
 				div.md-col.md-col-4.pr3
 					h3 Research Question
-					p= researchQuestion
+					p!= typogr(researchQuestion).typogrify()
 	
 	div.clearfix.relative
 		div.md-col.md-col-8.pr3
@@ -43,3 +44,9 @@ block content
 			a(href='/') &laquo; Home
 		h5.mb0.serif.col.md-col-4.center
 			a(href='#') &uarr; Top
+	
+block append scripts
+	script(type='text/javascript').
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			lightbox.option();
+		});
