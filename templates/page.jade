@@ -15,24 +15,24 @@ block content
 		
 		div.clearfix
 			if problem
-				div.md-col.md-col-4.pr3
+				div.md-col.md-col-4.md-pr3
 					h3 Problem
 					p!= typogr(problem).typogrify()
-			if solution
-				div.md-col.md-col-4.pr3
-					h3 Solution
-					p!= typogr(solution).typogrify()
 			if researchQuestion
-				div.md-col.md-col-4.pr3
+				div.md-col.md-col-4.md-pr3
 					h3 Research Question
 					p!= typogr(researchQuestion).typogrify()
+			if solution
+				div.md-col.md-col-4.md-pr3
+					h3 Solution
+					p!= typogr(solution).typogrify()
 			if role
-				div.md-col.md-col-4.pr3
+				div.md-col.md-col-4.md-pr3
 					h3 My Role
 					p!= typogr(role).typogrify()
 	
 	div.clearfix.relative
-		div.md-col.md-col-8.pr3
+		div.md-col.md-col-8.md-pr3
 			if organization
 				div.figwrapper
 					figure.flush
