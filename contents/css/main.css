@@ -272,6 +272,10 @@ hr {
 	font-size: 17px;
 }
 
+.md-mbn2 {
+	margin-bottom: 1rem;
+}
+
 .md-pr2 {
 	padding-right: 0;
 }
@@ -286,6 +290,10 @@ hr {
 
 @media only screen
 	and (min-width: 40em) {
+	.md-mbn2 {
+		margin-bottom: -1rem;
+	}
+
 	.md-pr2 {
 		padding-right: 1rem;
 	}
